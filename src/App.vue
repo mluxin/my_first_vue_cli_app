@@ -1,20 +1,25 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
-</template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navigation from './components/Navigation.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+	name: 'App',
+	components: {
+		Navigation
+	}
 }
 </script>
+
+<template>
+	<div id="app">
+		<nav>
+			<Navigation />
+			<a href="/about">À propos </a>
+			<a href="/contact">Contact</a>
+		</nav>
+		<p>Bienvenue sur notre page d'<Navigation /></p>
+	</div>
+</template>
+
 
 <style lang="scss">
 #app {
