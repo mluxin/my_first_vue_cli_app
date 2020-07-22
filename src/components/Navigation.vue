@@ -1,12 +1,13 @@
 // ./components/HomeLink.vue
 <script>
 export default {
-	name: 'Navigation'
+  name: 'Navigation',
+  props: ['url', 'text']
 }
 </script>
 
 <template>
-	<a href="/">Accueil </a>
+	<a href="url">{{ text }}</a>
 </template>
 
 <style>

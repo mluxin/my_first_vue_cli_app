@@ -5,16 +5,16 @@ export default {
 	name: 'App',
 	components: {
 		Navigation
-	}
+  }
 }
 </script>
 
 <template>
 	<div id="app">
 		<nav>
-			<Navigation />
-			<a href="/about">À propos </a>
-			<a href="/contact">Contact</a>
+			<Navigation url="/" text="Accueil" />
+			<Navigation url="/about" text="À propos" />
+			<Navigation url="/contact" text="Contact" />
 		</nav>
 		<p>Bienvenue sur notre page d'<Navigation /></p>
 	</div>
